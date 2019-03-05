@@ -11,6 +11,16 @@ div.form{
 
 }
 
+input [type=text] {
+  background: red;
+  border: 1px solid blue;
+  height: 40px;
+  width: 80px;
+}
+
 input [type=submit] {
   background: blue;
+  border: 1px solid red;
+  height: 40px;
+  width: 80px;
 }
