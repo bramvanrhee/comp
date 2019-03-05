@@ -24,9 +24,9 @@
           error_reporting(1);
            $Datum = $_POST['Datum'];
            $Clubs = $_POST['Clubs'];
-           $Eind= $_POST['Eind'];
-           $ID= $_POST['ID'];
-           $Stuur =$_POST['Stuur'];
+           $Eind = $_POST['Eind'];
+           $ID = $_POST['ID'];
+           $Stuur = $_POST['Stuur'];
            $Update = $_POST['Update'];
            $Delete = $_POST['Delete'];
 
@@ -74,6 +74,9 @@
                     echo "<table><tr><td><h5>ID</h5></td><td><h5>Datum</h5></td><td><h5>clubs</h5></td><td><h5>Eind stand</h5></td></tr>"; /*echo de top rij met opties (zo als naam num artiest)*/
 
                     while($row = $result->fetch_assoc()) {
+
+                    echo "<h1>".$row['Clubs']."</h1>";
+                    echo "<h2>".$row['Score']."</h2>";
                     echo "<tr><td><h5>".$row['ID']."</h5></td><td><h5>".$row['Datum']."</h5></td>
                     <td><h5>".$row['Clubs']."</h5></td><td><h5>".$row['Score']."</h5></td></tr>"; /*echo de info*/
                       }
