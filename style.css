@@ -10,3 +10,7 @@ border:1px solid red
 div.form{
 
 }
+
+input [type=submit] {
+  background: blue;
+}
